@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
 }
 
 
-
+//How can I access the place here?
 @Composable
 fun NearbyPlaceCard(place: Place, modifier: Modifier = Modifier) {
     Card(modifier = modifier.padding(6.dp)){
@@ -58,6 +58,7 @@ fun NearbyPlaceCard(place: Place, modifier: Modifier = Modifier) {
 @Composable
 fun PlacesFamilyAppPreview() {
     PlacesFamilyAppTheme {
-        NearbyPlaceCard()
+        //Again, need to access place data here
+        NearbyPlaceCard(Place)
     }
 }
