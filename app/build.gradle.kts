@@ -68,6 +68,8 @@ dependencies {
     // Above added
     // KTX for the Places SDK for Android library -- added per this sample: https://github.com/googlemaps-samples/android-places-demos/tree/main/demo-kotlin/app
     implementation ("com.google.maps.android:places-ktx:3.0.0")
+    // Include Places SDK for Android
+    implementation ("com.google.android.libraries.places:places:2.6.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
