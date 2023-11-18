@@ -1,10 +1,13 @@
 package com.example.placesfamilyapp.network
 
+
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+private const val BASE_URL = "https://maps.googleapis.com/maps/api/place/"
+
 interface PlacesApiService {
-    @GET("maps/api/place/nearbysearch/json")
+    @GET("nearbysearch/json")
     suspend fun getNearbyPlaces(
         @Query("location") location: String,
         @Query("radius") radius: Int,
