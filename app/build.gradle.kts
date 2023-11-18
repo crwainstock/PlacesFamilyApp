@@ -66,6 +66,8 @@ dependencies {
     implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
     // Above added
+    // KTX for the Places SDK for Android library -- added per this sample: https://github.com/googlemaps-samples/android-places-demos/tree/main/demo-kotlin/app
+    implementation ("com.google.maps.android:places-ktx:3.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
