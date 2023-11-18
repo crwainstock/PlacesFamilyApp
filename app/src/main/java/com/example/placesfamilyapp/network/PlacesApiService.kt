@@ -1,6 +1,8 @@
 package com.example.placesfamilyapp.network
 
 
+import com.example.placesfamilyapp.model.PlacesApiResponse
+import kotlinx.serialization.json.Json
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -14,4 +16,8 @@ interface PlacesApiService {
         @Query("type") type: String,
         @Query("key") apiKey: String
     ): PlacesApiResponse
+}
+
+private val json = Json {
+    ignoreUnknownKeys = true
 }
