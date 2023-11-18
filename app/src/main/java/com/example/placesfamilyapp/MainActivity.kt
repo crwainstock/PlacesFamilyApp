@@ -27,7 +27,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    //Need to figure out how to access the place here
+                    NearbyPlaceCard(Place)
 
                 }
             }
@@ -57,6 +58,6 @@ fun NearbyPlaceCard(place: Place, modifier: Modifier = Modifier) {
 @Composable
 fun PlacesFamilyAppPreview() {
     PlacesFamilyAppTheme {
-        Greeting("Android")
+        NearbyPlaceCard()
     }
 }
