@@ -28,6 +28,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("String", "API_KEY", "\"${project.findProperty("apiKey") ?: ""}\"")
+        }
+        debug {
+            buildConfigField("String", "API_KEY", "\"${project.findProperty("apiKey") ?: ""}\"")
         }
     }
     compileOptions {

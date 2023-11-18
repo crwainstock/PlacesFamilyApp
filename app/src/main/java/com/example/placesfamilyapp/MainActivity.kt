@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun NearbyPlaceCard(place: Place, modifier: Modifier = Modifier) {
-    
+
 }
 
 @Preview(showBackground = true)
