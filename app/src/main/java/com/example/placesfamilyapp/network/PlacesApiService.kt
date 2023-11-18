@@ -29,3 +29,9 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
     .build()
+
+object PlacesApi {
+    val retrofitService : PlacesApiService by lazy {
+        retrofit.create(PlacesApiService::class.java)
+    }
+}
