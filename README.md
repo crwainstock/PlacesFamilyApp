@@ -51,5 +51,5 @@ However, this is the first Android app I'm attempting to build, so there's a lot
 
 My initial wireframes were done on paper, and I used Figma to make a simple, slightly higher fidelity mock up of the app.
 
-<img src="./wireframe.jpeg" alt="places family app wirefram" width="600"/>
-<img src="./mock up.png" alt="places family app mock up" width="600"/>
+<img src="./wireframe.jpeg" alt="places family app wirefram" width="200"/>
+<img src="./mock up.png" alt="places family app mock up" width="200"/>
