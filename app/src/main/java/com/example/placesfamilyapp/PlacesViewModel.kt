@@ -14,7 +14,7 @@ import retrofit2.HttpException
 import java.io.IOException
 
 /**
- * Created by Gauri Gadkari on 11/8/23.
+ * A MILLION THANKS TO Gauri Gadkari on 11/8/23 FOR SHARING SAMPLE PROJECT.
  */
 private val location = "37.423,-122.083"
 private val radius = 5000  // 5 kilometers
