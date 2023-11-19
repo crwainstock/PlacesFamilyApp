@@ -12,6 +12,10 @@ import kotlinx.serialization.Serializable
 //)
 // A MILLION THANK YOUS TO Gauri Gadkari FOR SHARING AN EXAMPLE APP DURING THE WOMEN WHO CODE HACKATHON
 
+
+/**
+ * This data class defines a Place object.
+ */
 @Serializable
 data class Place(
     @SerialName("business_status")

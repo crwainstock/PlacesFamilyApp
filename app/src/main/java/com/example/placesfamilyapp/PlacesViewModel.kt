@@ -1,7 +1,7 @@
 package com.example.placesfamilyapp
 
 //Why isn't this working? What needs to change? No idea...
-//import com.example.placesfamilyapp.BuildConfig
+import com.example.placesfamilyapp.BuildConfig
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -17,12 +17,12 @@ import java.io.IOException
 /**
  * A MILLION THANKS TO Gauri Gadkari on 11/8/23 FOR SHARING SAMPLE PROJECT.
  */
-private val location = "37.423,-122.083"
+private val location = "49.4521,11.0767" // Nuremberg
 private val radius = 5000  // 5 kilometers
 private val type = "park|zoo|tourist_attraction|movie_theater|historical_landmark"
 // Add your own API_KEY here
-// idk. BuildConfig is being a bitch.
-//private val apiKey = BuildConfig.API_KEY
+// idk. BuildConfig is being a bitch.p
+private val apiKey = BuildConfig.API_KEY
 
 sealed class PlacesUiState {
     data class Success(val places: List<Place>) : PlacesUiState()

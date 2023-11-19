@@ -11,9 +11,12 @@ import retrofit2.http.Query
 
 private const val BASE_URL = "https://maps.googleapis.com/maps/api/place/"
 
+/**
+ * Retrofit service object for creating api calls
+ */
 interface PlacesApiService {
     @GET("nearbysearch/json")
-    suspend fun getNearbyPlaces(
+    suspend fun getPlaces(
         @Query("location") location: String,
         @Query("radius") radius: Int,
         @Query("type") type: String,
@@ -24,12 +27,17 @@ interface PlacesApiService {
 private val json = Json {
     ignoreUnknownKeys = true
 }
-
+/**
+ * Use the Retrofit builder to build a retrofit object using a kotlinx.serialization converter
+ */
 private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
     .build()
 
+/**
+ * A public Api object that exposes the lazy-initialized Retrofit service
+ */
 object PlacesApi {
     val retrofitService : PlacesApiService by lazy {
         retrofit.create(PlacesApiService::class.java)
