@@ -1,5 +1,7 @@
 package com.example.placesfamilyapp
 
+//Why isn't this working? What needs to change? No idea...
+import com.example.placesfamilyapp.BuildConfig
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -16,7 +18,7 @@ import java.io.IOException
  */
 private val location = "37.423,-122.083"
 private val radius = 5000  // 5 kilometers
-private val type = "restaurant"
+private val type = "park|zoo|tourist_attraction|movie_theater|historical_landmark"
 // Add your own API_KEY here
 private val apiKey = BuildConfig.API_KEY
 
