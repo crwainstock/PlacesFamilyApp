@@ -19,7 +19,7 @@ import java.io.IOException
  */
 private val location = "49.4521,11.0767" // Nuremberg
 private val radius = 5000  // 5 kilometers
-private val type = "park|zoo|tourist_attraction|movie_theater|historical_landmark"
+private val type = "tourist_attraction|park|zoo|museum|movie_theater"
 // Add your own API_KEY here
 // idk. BuildConfig is being a bitch.p
 private val apiKey = BuildConfig.API_KEY
