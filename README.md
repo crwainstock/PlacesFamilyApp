@@ -54,4 +54,10 @@ My initial wireframes were done on paper, and I used Figma to make a simple, sli
 <img src="./wireframe.jpeg" alt="places family app wirefram" width="200"/>
 <img src="./mock up.png" alt="places family app mock up" width="200"/>
 
+### 💡 Thoughts after Day 2 of hackathon
+
+Oof. After a few hours of work today, I'm still stuck with the project setup and scaffolding. I've been debugging an error with the BuildConfig object for the last like 2 hours, and I have no idea how to resolve the issue.
+
+I can't really move forward with the build without accessing the api key, so I'm considering hardcoding it into the app instead of trying to access it secretly from the local.properties file. I don't know. It's kind of discouraging that it's taking SOOOO long to get things set up. It's all new, though, so I guess it makes sense that it will take a while to learn about what's needed, troubleshoot issues that come up, and get everything connected. At this rate, though, I won't get past the scaffolding phase of the build before the end of the hackathon.
+
 ### ✅ Day 2 Tasks
