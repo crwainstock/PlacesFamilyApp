@@ -1,5 +1,8 @@
 package com.example.placesfamilyapp.model
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
 @Serializable
 data class Place(
     val name: String,
