@@ -1,7 +1,7 @@
 package com.example.placesfamilyapp
 
 //Why isn't this working? What needs to change? No idea...
-import com.example.placesfamilyapp.BuildConfig
+//import com.example.placesfamilyapp.BuildConfig
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -22,7 +22,7 @@ private val radius = 5000  // 5 kilometers
 private val type = "tourist_attraction|park|zoo|museum|movie_theater"
 // Add your own API_KEY here
 // idk. BuildConfig is being a bitch.p
-private val apiKey = BuildConfig.API_KEY
+private val apiKey = "AIzaSyDKjTdwi1TdfnJTXslbm73K-hHp9mGbUDA"
 
 sealed class PlacesUiState {
     data class Success(val places: List<Place>) : PlacesUiState()
@@ -34,7 +34,6 @@ class PlacesViewModel : ViewModel() {
     var placesUiState: PlacesUiState by mutableStateOf(PlacesUiState.Loading)
 
     init {
-
         viewModelScope.launch {
             placesUiState = PlacesUiState.Loading
             placesUiState = try { PlacesUiState.Success(
