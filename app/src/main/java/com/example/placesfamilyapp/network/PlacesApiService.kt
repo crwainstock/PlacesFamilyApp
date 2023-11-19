@@ -1,7 +1,7 @@
 package com.example.placesfamilyapp.network
 
 
-import com.example.placesfamilyapp.model.PlacesApiResponse
+import com.example.placesfamilyapp.model.Response
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
@@ -18,7 +18,7 @@ interface PlacesApiService {
         @Query("radius") radius: Int,
         @Query("type") type: String,
         @Query("key") apiKey: String
-    ): PlacesApiResponse
+    ): Response
 }
 
 private val json = Json {
