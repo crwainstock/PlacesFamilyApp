@@ -53,3 +53,5 @@ My initial wireframes were done on paper, and I used Figma to make a simple, sli
 
 <img src="./wireframe.jpeg" alt="places family app wirefram" width="200"/>
 <img src="./mock up.png" alt="places family app mock up" width="200"/>
+
+### ✅ Day 2 Tasks
