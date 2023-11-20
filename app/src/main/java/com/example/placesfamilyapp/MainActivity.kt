@@ -147,7 +147,10 @@ fun PlacesFamilyApp(placesUIState: PlacesUiState) {
             // Error message
         }
     }
-    BottomAppBar()
+    // I tried adding a bottom app bar to simulate the mock up (current location), but I ran out
+    // of time. My computer literatlly just turned off mid edit, so...Android Studio and my computer
+    // do not get along...:*(
+//    BottomAppBar()
 }
 
 
