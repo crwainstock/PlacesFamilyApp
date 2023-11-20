@@ -161,7 +161,7 @@ fun PlacesFamilyApp(placesUIState: PlacesUiState) {
 fun PlacesFamilyAppPreview() {
     PlacesFamilyAppTheme {
         val placesViewModel: PlacesViewModel = viewModel()
-        //Again, need to access place data here
+
         PlacesFamilyApp(placesUIState = placesViewModel.placesUiState)
     }
 }

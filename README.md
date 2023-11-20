@@ -60,4 +60,22 @@ Oof. After a few hours of work today, I'm still stuck with the project setup and
 
 I can't really move forward with the build without accessing the api key, so I'm considering hardcoding it into the app instead of trying to access it secretly from the local.properties file. I don't know. It's kind of discouraging that it's taking SOOOO long to get things set up. It's all new, though, so I guess it makes sense that it will take a while to learn about what's needed, troubleshoot issues that come up, and get everything connected. At this rate, though, I won't get past the scaffolding phase of the build before the end of the hackathon.
 
+After some thought, I decided to hardcode my API key into my app. I know this isn't ideal, but I didn't know how else to move forward. I hadn't touched the UI up until this point, so I wanted to at least get a tiny bit into that part before the end of the hackathon.
+
 ### ✅ Day 2 Tasks
+
+I tried to debug whatever isn't working with accessing my API key. I did a ton of Googling and using ChatGPT and chatting with other hackathon participants, but it was to no avail. Something isn't quite right. So, I hardcoded the API key into the app, as previously mentioned.
+
+I moved onto working with the UI. As with all of the scaffolding and set up, much of the UI work was new for me as well. I have only dabbled in basic layouts with Jetpack Compose before this project, so each element took quite a while to put together. On top of that, my computer HATES using Android Studio. It's SOOOOO SLOOOW! That was a major barrier for me during this build, for sure.
+
+When I managed to render the data in my app, though, it was MAGICAL!!!🪄🔮🧝🏻‍♀️
+
+I tweaked the styling a bit, well, I tried to. But, again, it was super slow-going. I managed to add the location names, a star icon, and the ratings for the locations.
+
+### 💡 Thoughts after Day 3 of hackathon
+
+I wanted to try to add some more features (render more data, maybe get the image rendering, add a bottom app bar where the location could be displayed at some point), but...none of it was working. I just couldn't get things to work with the amount of time that I had and how slow Android Studio was on my computer.
+
+I decided to wrap up the build and spend the remaining time putting my presentation together. You can see the video presentation here!
+
+![gif of app styling progress](./wander%20wise.gif)
