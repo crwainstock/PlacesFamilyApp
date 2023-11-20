@@ -78,4 +78,4 @@ I wanted to try to add some more features (render more data, maybe get the image
 
 I decided to wrap up the build and spend the remaining time putting my presentation together. You can see my [video presentation here](https://drive.google.com/file/d/1zD3pRwP_bqpAZnS7QmUrAiG7PUVFj4iv/view?usp=drive_link)!
 
-![gif of app styling progress](./wander%20wise.gif)
+<img src="./wander wise.gif" alt="gif of styling progress" width="200"/>
