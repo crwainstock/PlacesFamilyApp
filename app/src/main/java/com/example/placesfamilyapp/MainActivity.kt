@@ -3,6 +3,7 @@ package com.example.placesfamilyapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.Image
@@ -36,12 +37,11 @@ import com.example.placesfamilyapp.ui.theme.PlacesFamilyAppTheme
 
 
 
-class MainActivity : ComponentActivity() {
+class MainActivity : ComponentActivity()  {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             PlacesFamilyAppTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = Color(0xf2f4f3)
@@ -54,7 +54,27 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+@Composable
+fun BottomAppBar() {
+    androidx.compose.material3.BottomAppBar(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(56.dp) // Adjust the height as needed
+            .padding(16.dp),
 
+    ) {
+
+        Text(
+            text = "Wander Wise",
+            modifier = Modifier
+                .weight(1f)
+                .padding(16.dp),
+            color = Color.White,
+            fontSize = 20.sp,
+            textAlign = TextAlign.Center
+        )
+    }
+}
 
 
 
@@ -88,7 +108,7 @@ fun NearbyPlaceCard(place: Place, modifier: Modifier = Modifier) {
                         Icon(imageVector = Icons.Default.Star, contentDescription = "star icon", modifier = Modifier
                             .height(25.dp)
                             .width(25.dp)
-                            .align(Alignment.CenterVertically)
+//                            .align(Alignment.CenterVertically)
                         )
                         Text(
                             text = place.rating.toString(),
@@ -127,6 +147,7 @@ fun PlacesFamilyApp(placesUIState: PlacesUiState) {
             // Error message
         }
     }
+    BottomAppBar()
 }
 
 
