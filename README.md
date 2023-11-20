@@ -76,6 +76,6 @@ I tweaked the styling a bit, well, I tried to. But, again, it was super slow-goi
 
 I wanted to try to add some more features (render more data, maybe get the image rendering, add a bottom app bar where the location could be displayed at some point), but...none of it was working. I just couldn't get things to work with the amount of time that I had and how slow Android Studio was on my computer.
 
-I decided to wrap up the build and spend the remaining time putting my presentation together. You can see the video presentation here!
+I decided to wrap up the build and spend the remaining time putting my presentation together. You can see my [video presentation here](https://drive.google.com/file/d/1zD3pRwP_bqpAZnS7QmUrAiG7PUVFj4iv/view?usp=drive_link)!
 
 ![gif of app styling progress](./wander%20wise.gif)
